@@ -16,7 +16,7 @@ import java.util.TimerTask;
 import static android.Manifest.permission.ACCESS_FINE_LOCATION;
 
 public class MyService extends Service {
-    private FusedLocationProviderClient fusedLocationClient;
+   
     public static final long INTERVAL=10000;//variable to execute services every 10 second
     private Handler mHandler=new Handler(); // run on another Thread to avoid crash
     private Timer mTimer=null;
