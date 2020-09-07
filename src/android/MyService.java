@@ -7,8 +7,7 @@ import android.os.IBinder;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.annotation.Nullable;
-import androidx.core.app.ActivityCompat;
+
 
 
 import java.util.Timer;
@@ -21,7 +20,7 @@ public class MyService extends Service {
     public static final long INTERVAL=10000;//variable to execute services every 10 second
     private Handler mHandler=new Handler(); // run on another Thread to avoid crash
     private Timer mTimer=null;
-    @Nullable
+   
     @Override
     public IBinder onBind(Intent intent) {
         return null;
