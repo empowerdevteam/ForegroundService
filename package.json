@@ -1,0 +1,16 @@
+{
+  "name": "foreground",
+  "version": "1.0.0",
+  "description": "this is for foreground service",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ionic",
+    "cordova",
+    "android"
+  ],
+  "author": "arpita",
+  "license": "ISC"
+}
