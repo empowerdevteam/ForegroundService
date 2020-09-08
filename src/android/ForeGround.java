@@ -21,12 +21,21 @@ public class ForeGround extends CordovaPlugin {
             
             this.coolMethod( callbackContext);
             return true;
+        }else if (action.equals("service2")) {
+            
+            this.service( callbackContext);
+            return true;
         }
         return false;
     }
 
     private void coolMethod( CallbackContext callbackContext) {
         cordova.getActivity().startService(new Intent(cordova.getActivity(), MyService.class));
+       
+    }
+
+    private void service( CallbackContext callbackContext) {
+        cordova.getActivity().startService(new Intent(cordova.getActivity(), MyService2.class));
        
     }
 }

@@ -14,10 +14,12 @@
         </config-file>
           <config-file target="AndroidManifest.xml" parent="/manifest/application">
       <service android:name="cordova.plugin.foreground.MyService"  />
+       <service android:name="cordova.plugin.foreground.MyService2"  />
         </config-file>
         <config-file parent="/*" target="AndroidManifest.xml"></config-file>
         <source-file src="src/android/ForeGround.java" target-dir="scordova.plugin.foreground.ForeGround" />
          <source-file src="src/android/MyService.java" target-dir="cordova.plugin.foreground.ForeGround" />
+          <source-file src="src/android/MyService2.java" target-dir="cordova.plugin.foreground.ForeGround" />
 
          
     </platform>

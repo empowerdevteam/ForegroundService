@@ -1,5 +1,10 @@
 var exec = require('cordova/exec');
 
-exports.coolMethod = function (arg0, success, error) {
-    exec(success, error, 'ForeGround', 'coolMethod', [arg0]);
+module.exports.coolMethod = function (arg0, success, error) {
+    exec(success, error, 'ForeGround', 'coolMethod', []);
 };
+
+module.exports.service2 = function(arg0,success,error){
+    exec(success, error, 'ForeGround', 'service2', []);
+   
+   };
